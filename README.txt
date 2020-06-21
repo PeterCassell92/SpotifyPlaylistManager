@@ -1,5 +1,5 @@
 LIVE VERSION
-https://spotify.verj.cloud
+spotify.verj.cloud
 
 SPOTIFY PLAYLIST MANAGER
 
