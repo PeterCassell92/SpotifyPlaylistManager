@@ -3,20 +3,24 @@
     <pageContents>
         <page contentClass="content-root" ctrl="PagVp6oG" outputType="0" pdfFooterText="LocalTxt8RI9hq" pdfHeaderText="LocalTxt7hjCqA" uid="PEcAu2MR">
             <bootstrapcontainer cssClass="h-75 d-flex flex-column" ctrl="BsContainerFGYX0" uid="GJiItQdc">
-                <bootstraprow cssClass="flex-grow-1" ctrl="BsRowopyFW" uid="9hpnzZox">
-                    <bootstrapcolumn cssClass="d-flex flex-column" ctrl="BsColumnYaayP" smallWidth="9" uid="7Tmvqefl">
-                        <panel cssClass="@0" ctrl="PanMArwE" uid="GTzcOEzh">
-                            <rootHtmlElementProperties idLocator="dashboardTitlePnl"/>
-                            <text cssClass="@0" ctrl="TexqvuLV" text="LocalTxt3pe1E1" uid="ELtDDG5D"/>
-                        </panel>
+                <bootstraprow cssClass="flex-grow-1" ctrl="BsRowopyFW" gutter="true" horizontalAlignment="Between" uid="9hpnzZox">
+                    <bootstrapcolumn cssClass="flex-grow-1" ctrl="BsColumnYaayP" extraSmallWidth="12" mediumWidth="5" smallWidth="0" uid="7Tmvqefl">
+                        <rootHtmlElementProperties idLocator="dashboardTitlePnl"/>
+                        <text cssClass="@0" ctrl="TexqvuLV" text="LocalTxt3pe1E1" uid="ELtDDG5D"/>
                     </bootstrapcolumn>
-                    <bootstrapcolumn cssClass="order-first order-md-1" ctrl="BsColumnW1Qg9" extraSmallWidth="12" mediumWidth="-2" smallWidth="0" uid="5xv9vyBm">
-                        <text ctrl="welcomeMessageTxt" text="LocalTxtEPUSc" uid="48cUtFMp">
-                            <rootHtmlElementProperties idLocator="welcomeMessageTxt"/>
-                        </text>
-                        <panel cssClass="d-none d-md-block" ctrl="Panwsv9X" uid="K9Tx3DRR">
-                            <image alternativeText="LocalTxt3BTtlE" ariaLabelText="LocalTxt4BzDee" cssClass="img-fluid profile-pic" ctrl="ImgyzzCX" imageURL="&amp;&amp;spotify_user_image_url" mouseOverText="LocalTxt7hBS2Q" newLine="true" uid="5SOUGm5j"/>
-                        </panel>
+                    <bootstrapcolumn cssClass="order-first order-md-1" ctrl="BsColumnW1Qg9" extraSmallWidth="12" mediumWidth="4" smallWidth="0" uid="5xv9vyBm">
+                        <bootstraprow cssClass="h-100" ctrl="BsRowJxJi5" gutter="false" horizontalAlignment="End" uid="QqWfeub3">
+                            <bootstrapcolumn cssClass="d-flex align-items-center" ctrl="BsColumnuWwcf" extraSmallWidth="-2" smallWidth="0" uid="h66wZdb">
+<text ctrl="welcomeMessageTxt" text="LocalTxtEPUSc" uid="48cUtFMp">
+    <rootHtmlElementProperties idLocator="welcomeMessageTxt"/>
+</text>
+                            </bootstrapcolumn>
+                            <bootstrapcolumn cssClass="d-none d-md-block" ctrl="BsColumn1htRp" mediumWidth="-1" smallWidth="-1" uid="2HajVvbw" verticalAlignment="Center">
+<panel cssClass="@0" ctrl="Panwsv9X" uid="K9Tx3DRR">
+    <image alternativeText="LocalTxt3BTtlE" ariaLabelText="LocalTxt4BzDee" cssClass="profile-pic" ctrl="ImgyzzCX" imageURL="&amp;&amp;spotify_user_image_url" mouseOverText="LocalTxt7hBS2Q" newLine="true" uid="5SOUGm5j"/>
+</panel>
+                            </bootstrapcolumn>
+                        </bootstraprow>
                     </bootstrapcolumn>
                 </bootstraprow>
                 <bootstraprow cssClass="flex-grow-1" ctrl="BsRowyl2vj" uid="4rwKKaVC">
@@ -27,7 +31,7 @@
                             <header cssClass="subheader" ctrl="HeadN91wP" uid="CyV1KeWp">
 <text ctrl="TexV2LgP" text="LocalTxt4UDbys" uid="K8PZO6tR"/>
                             </header>
-                            <panel ctrl="PanqsHma" uid="LlXuL4Ce">
+                            <panel cssClass="mb-4" ctrl="PanqsHma" uid="LlXuL4Ce">
 <field ariaLabelText="LocalTxtAO3OqO" buttonText="LocalTxt9ubAEW" ctrl="Fld11mst9" displayLabelText="true" field="spotify_artist_search" placeHolderText="LocalTxt1NhXlg" requiredText="LocalTxt1REdrU" uid="Ds5WTfkY" validationText="LocalTxt4eXBmp"/>
 <button ariaLabelText="LocalTxt4JaMDE" buttonText="LocalTxt6GuUux" ctrl="ButzBB4e" mouseOverText="LocalTxtAP9am8" onClickEvent="/Modules/Home/Scripts/Events/spotifySearch" uid="Ed1eNYMN"/>
                             </panel>

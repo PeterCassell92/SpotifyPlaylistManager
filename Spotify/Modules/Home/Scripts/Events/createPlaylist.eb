@@ -73,9 +73,8 @@ try{
 					});
 				}		
 			});
-
-			event.owner.addInfoMessage(&quot;Playlist Created. Go to Spotify to listen.&quot;)
 	});
+	event.owner.addInfoMessage(&quot;Playlist Created. Head to open.spotify.com to listen.&quot;)
 }
 catch(e){
 	event.owner.addWarningMessage(e);
