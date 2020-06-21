@@ -1,5 +1,5 @@
-LIVE VERSION
-spotify.verj.cloud
+<link src=http://spotify.verj.cloud>LIVE VERSION</link>
+
 
 SPOTIFY PLAYLIST MANAGER
 
