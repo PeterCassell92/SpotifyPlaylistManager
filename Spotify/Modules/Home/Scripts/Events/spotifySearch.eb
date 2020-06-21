@@ -6,10 +6,13 @@ importPackage(com.ebasetech.xi.services);
 
 try{	
 	var t = tables.searchResults;
-
-
+	
 	callSpotifyAPI('Search',
 	function pre(){
+
+		if (!fields.search_query.value){
+			throw new Error(&quot;Please enter an Artist Name to Search&quot;);		
+		}
 		//setup query
 		var re = /\s/ig
 		fields.search_query.value = fields.spotify_artist_search.value.replace(re, &quot;+&quot;);
