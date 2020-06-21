@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.8.0">
+    <restResource description="get Spotify Token" id="SpotifyAuth" dateCreated="2020-06-19T12:13:31.414+01:00">
+        <baseURI>https://accounts.spotify.com</baseURI>
+        <endpoints>
+            <endpoint name="GetBearerToken" description="" path="https://accounts.spotify.com/authorize" method="GET" requestField="&amp;&amp;requestBody" responseField="&amp;&amp;responseBody" debug="true" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Content-Type" value="application/x-www-form-urlencoded"/>
+                </requestHeaders>
+                <parameters>
+                    <parameter name="client_id" value="&amp;&amp;client_id" queryParam="true"/>
+                    <parameter name="response_type" value="&amp;&amp;response_type" queryParam="true"/>
+                    <parameter name="redirect_uri" value="&amp;&amp;redirect_uri" queryParam="true"/>
+                    <parameter name="scope" value="&amp;&amp;scope" queryParam="true"/>
+                </parameters>
+            </endpoint>
+            <endpoint name="GetAuthKey" description="" path="/api/token" method="POST" requestField="" responseField="&amp;&amp;responseBody" debug="true" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Content-Type" value="application/x-www-form-urlencoded"/>
+                </requestHeaders>
+                <parameters>
+                    <parameter name="grant_type" value="authorization_code" queryParam="true"/>
+                    <parameter name="code" value="&amp;&amp;bearer_code" queryParam="true"/>
+                    <parameter name="redirect_uri" value="&amp;&amp;redirect_uri" queryParam="true"/>
+                    <parameter name="client_id" value="&amp;&amp;client_id" queryParam="true"/>
+                    <parameter name="client_secret" value="&amp;&amp;client_secret" queryParam="true"/>
+                </parameters>
+            </endpoint>
+        </endpoints>
+        <fields>
+            <field id="client_id"/>
+            <field id="redirect_uri"/>
+            <field id="requestBody"/>
+            <field id="responseBody"/>
+            <field id="responseStatusCode"/>
+            <field id="response_type"/>
+            <field id="scope"/>
+            <field id="bearer_code"/>
+            <field id="client_credentials"/>
+            <field id="client_secret"/>
+        </fields>
+    </restResource>
+</ebase>

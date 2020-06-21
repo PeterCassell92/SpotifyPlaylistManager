@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="SpotifyAPI">
+        <fieldMapping resourceField="artist_id" field="artist_id"/>
+        <fieldMapping resourceField="auth_key" field="auth_key"/>
+        <fieldMapping resourceField="country_code" field="country"/>
+        <fieldMapping resourceField="playlist_id" field="playlist_id"/>
+        <fieldMapping resourceField="requestBody" field="requestBody"/>
+        <fieldMapping resourceField="responseBody" field="responseBody"/>
+        <fieldMapping resourceField="responseStatusCode" field="responseCode"/>
+        <fieldMapping resourceField="search_query" field="search_query"/>
+        <fieldMapping resourceField="search_type" field="search_type"/>
+        <fieldMapping resourceField="spotify_user_id" field="spotify_user_id"/>
+    </resourceMapping>
+    <resourceMapping id="SpotifyAuth">
+        <fieldMapping resourceField="bearer_code" field="bearer_code"/>
+        <fieldMapping resourceField="client_credentials" field="client_credentials"/>
+        <fieldMapping resourceField="client_id" field="client_id"/>
+        <fieldMapping resourceField="client_secret" field="client_secret"/>
+        <fieldMapping resourceField="redirect_uri" field="redirect_uri"/>
+        <fieldMapping resourceField="requestBody" field="requestBody"/>
+        <fieldMapping resourceField="responseBody" field="responseBody"/>
+        <fieldMapping resourceField="responseStatusCode" field="responseCode"/>
+        <fieldMapping resourceField="response_type" field="response_type"/>
+        <fieldMapping resourceField="scope" field="scope"/>
+    </resourceMapping>
+</resourceMappings>

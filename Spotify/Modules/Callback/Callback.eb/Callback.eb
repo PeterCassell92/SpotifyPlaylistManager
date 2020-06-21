@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.8.0">
+    <webForm beforeEvent="/Modules/Callback/Scripts/Events/CallbackBF" formHeaderTextRef="Txt4BxcVq" htmlTitleTextRef="Txt3eFH73" finishButtonTextRef="Txt7Facrp" backButtonSupport="yes" docType="HTML5" template="/Modules/Shared/Client/PresentationTemplate/Spotify_Bootstrap4" firstPage="Page_1" preferredScriptFolder="/Modules/Callback/Scripts" id="Callback" dateCreated="2020-06-21T10:18:36.190+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Modules/Shared/Server/Scripts/Functions/sharedFunctions"/>
+        </sharedFunctionScripts>
+        <saveRestore enabled="false" saveButtonTextRef="Txt9KLZgZ" restoreButtonTextRef="Txt57UDnK" saveInfoTextRef="Txt7hiPr9" restoreInfoTextRef="Txt1DOCCz"/>
+        <finalPage headerTextRef="Txt8RqQhD" infoTextRef="Txt7Uea2n" returnTextRef="Txt86KoSh" inheritStyle="true"/>
+    </webForm>
+</ebase>

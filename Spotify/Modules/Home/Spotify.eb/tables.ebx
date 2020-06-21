@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="searchResults">
+        <column name="id" type="CHAR" labelTextRef="TxtAjdyRI" displayType="TEXT"/>
+        <column name="img_url" type="CHAR" labelTextRef="Txt6mfDwO" displayType="TEXT"/>
+        <column name="name" type="CHAR" labelTextRef="Txt9SwdvZ" displayType="TEXT"/>
+    </table>
+</tables>

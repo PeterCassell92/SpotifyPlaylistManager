@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.8.0">
+    <restResource id="SpotifyAPI" dateCreated="2020-06-19T18:45:46.552+01:00">
+        <baseURI>https://api.spotify.com/v1</baseURI>
+        <endpoints>
+            <endpoint name="" description="" path="" method="GET" requestField="" responseField="" debug="false" responseCode="&amp;&amp;responseStatusCode"/>
+            <endpoint name="GetArtist" description="" path="/artists/&amp;&amp;artist_id" method="GET" requestField="" responseField="&amp;&amp;responseBody" debug="false" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                    <requestHeader name="Accept" value="application/json"/>
+                    <requestHeader name="Connection" value="keep-alive"/>
+                </requestHeaders>
+            </endpoint>
+            <endpoint name="GetRelatedArtists" description="" path="/artists/&amp;&amp;artist_id/related-artists" method="GET" requestField="" responseField="&amp;&amp;responseBody" debug="false" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                    <requestHeader name="Connection" value="keep-alive"/>
+                    <requestHeader name="Accept" value="application/json"/>
+                </requestHeaders>
+            </endpoint>
+            <endpoint name="CreatePlaylist" description="" path="/users/&amp;&amp;spotify_user_id/playlists" method="POST" requestField="&amp;&amp;requestBody" responseField="&amp;&amp;responseBody" debug="false" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Content-Type" value="application/json"/>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                    <requestHeader name="Connection" value="keep-alive"/>
+                    <requestHeader name="Accept" value="application/json"/>
+                </requestHeaders>
+            </endpoint>
+            <endpoint name="GetArtistTopTracks" description="" path="/artists/&amp;&amp;artist_id/top-tracks" method="GET" requestField="" responseField="&amp;&amp;responseBody" debug="false" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                    <requestHeader name="Accept" value="application/json"/>
+                    <requestHeader name="Connection" value="keep-alive"/>
+                </requestHeaders>
+                <parameters>
+                    <parameter name="country" value="&amp;&amp;country_code" queryParam="true"/>
+                </parameters>
+            </endpoint>
+            <endpoint name="AddTracksToPlaylist" description="" path="/users/&amp;&amp;spotify_user_id/playlists/&amp;&amp;playlist_id/tracks" method="POST" requestField="&amp;&amp;requestBody" responseField="&amp;&amp;responseBody" debug="false" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Content-Type" value="application/json"/>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                    <requestHeader name="Accept" value="application/json"/>
+                    <requestHeader name="Connection" value="keep-alive"/>
+                </requestHeaders>
+            </endpoint>
+            <endpoint name="GetCurrentUsersProfile" description="" path="/me" method="GET" requestField="" responseField="&amp;&amp;responseBody" debug="true" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                </requestHeaders>
+            </endpoint>
+            <endpoint name="Search" description="" path="/search" method="GET" requestField="" responseField="&amp;&amp;responseBody" debug="true" responseCode="&amp;&amp;responseStatusCode">
+                <requestHeaders>
+                    <requestHeader name="Authorization" value="Bearer &amp;&amp;auth_key"/>
+                </requestHeaders>
+                <parameters>
+                    <parameter name="q" value="&amp;&amp;search_query" queryParam="true"/>
+                    <parameter name="type" value="&amp;&amp;search_type" queryParam="true"/>
+                </parameters>
+            </endpoint>
+        </endpoints>
+        <fields>
+            <field id="artist_id"/>
+            <field id="auth_key"/>
+            <field id="country_code"/>
+            <field id="playlist_id"/>
+            <field id="requestBody"/>
+            <field id="responseBody"/>
+            <field id="responseStatusCode"/>
+            <field id="spotify_user_id"/>
+            <field id="search_query"/>
+            <field id="search_type"/>
+        </fields>
+    </restResource>
+</ebase>

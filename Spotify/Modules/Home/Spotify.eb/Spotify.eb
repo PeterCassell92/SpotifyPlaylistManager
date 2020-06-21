@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.8.0">
+    <webForm formHeaderTextRef="Txt7TFQjj" htmlTitleTextRef="Txt5AhLAK" finishButtonTextRef="Txt7SChoP" backButtonSupport="yes" docType="HTML5" template="/Modules/Shared/Client/PresentationTemplate/Spotify_Bootstrap4" firstPage="Landing" preferredScriptFolder="/Modules/Home/Scripts" id="Spotify" dateCreated="2020-06-19T16:49:50.794+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Modules/Shared/Server/Scripts/Functions/sharedFunctions"/>
+            <sharedFunctionScript path="/Modules/Home/Scripts/Functions/spotifyManagerFunctions"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="SpotifyAPI" path="/Modules/Shared/Server/Resources/REST/SpotifyAPI"/>
+            <resource name="SpotifyAuth" path="/Modules/Shared/Server/Resources/REST/SpotifyAuth"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="TxtACYXRf" restoreButtonTextRef="TxtAMrUtd" saveInfoTextRef="Txt6f8Emm" restoreInfoTextRef="Txt9199PO"/>
+        <finalPage headerTextRef="Txt7CiEdd" infoTextRef="Txt7PrIoQ" returnTextRef="Txt2dAwK2" inheritStyle="true"/>
+    </webForm>
+</ebase>

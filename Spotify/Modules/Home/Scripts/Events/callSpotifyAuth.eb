@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.8.0">
+    <script contentType="Javascript" preferredComponentPath="/Modules/Home/Spotify" id="callSpotifyAuth" dateCreated="2020-06-19T17:01:02.435+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+try{
+	// Call Authorize Endpoint
+	var url = &quot;https://accounts.spotify.com/authorize?client_id=&quot; + fields.client_id.value + &quot;&amp;response_type=code&amp;redirect_uri=&quot; + fields.redirect_uri.value + &quot;&amp;scope=&quot;+fields.scope.value+&quot;&amp;show_dialog=true&amp;state=&quot;+form.returnUrl;
+
+	log(&quot;Calling Spotify Authorize&quot;);
+	log(&quot;Redirect URI = &quot; + fields.redirect_uri.value);
+	
+	form.callUrl(url, null, &quot;get&quot;);
+	//Cannot be achieved using REST Resource because callback is required (enhancement request needed for REST Resources)
+	//resources.SpotifyAuth.call('GetBearerToken');
+
+	//we do not return to the same session because each session URI would need adding to the spotify whitelist. IT MAY BE POSSIBLE TO STORE THE SESSION ID IN A COOKIE FOR THE RETURN but tbh nothing in session by this point is needed to be stored.
+	if(client.request.getParameter(&quot;code&quot;)){
+	//get bearer code from client parameters
+		fields.bearer_code.value = client.request.getParameter(&quot;code&quot;);
+		//controls.ClientInfo.text.text = fields.bearer_code.value;
+	
+		//call GetAuthKey Endpoint
+		resources.SpotifyAuth.call(&quot;GetAuthKey&quot;);
+	//controls.ClientInfo.text.text = fields.responseCode.value + &quot; &quot; +  fields.responseBody.value;
+	
+		if(fields.responseCode.value.charAt(0) == &quot;2&quot;){
+			var obj = JSON.parse(fields.responseBody.value);
+	
+			fields.auth_key.value = obj.access_token;
+			fields.refresh_token.value = obj.refresh_token;
+			
+			fields.authSuccess.value = true;
+			form.gotoPage(pages.Dashboard);
+		}
+		else{
+			controls.SpotifyLogin.addWarningMessage(&quot;Authorization Error&quot;);
+		}
+	}
+
+}
+catch(e){
+	event.owner.addWarningMessage(e);
+}
+</scriptText>
+    </script>
+</ebase>

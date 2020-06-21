@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Dashboard" beforePageEvent="/Modules/Home/Scripts/Events/DashboardBP" pageHeaderTextRef="TxtAMKIzp" pageInfoTextReference="Txt187Gh0" pageTrailerTextReference="Txt3iMDJZ" nextPageTextReference="Txt5gllz3" prevPageTextReference="Txt40wu8u">
+    <pageContents>
+        <page contentClass="content-root" ctrl="PagVp6oG" outputType="0" pdfFooterText="LocalTxt8RI9hq" pdfHeaderText="LocalTxt7hjCqA" uid="PEcAu2MR">
+            <bootstrapcontainer cssClass="h-75 d-flex flex-column" ctrl="BsContainerFGYX0" uid="GJiItQdc">
+                <bootstraprow cssClass="flex-grow-1" ctrl="BsRowopyFW" uid="9hpnzZox">
+                    <bootstrapcolumn cssClass="d-flex flex-column" ctrl="BsColumnYaayP" smallWidth="9" uid="7Tmvqefl">
+                        <panel cssClass="@0" ctrl="PanMArwE" uid="GTzcOEzh">
+                            <rootHtmlElementProperties idLocator="dashboardTitlePnl"/>
+                            <text cssClass="@0" ctrl="TexqvuLV" text="LocalTxt3pe1E1" uid="ELtDDG5D"/>
+                        </panel>
+                    </bootstrapcolumn>
+                    <bootstrapcolumn cssClass="order-first order-md-1" ctrl="BsColumnW1Qg9" extraSmallWidth="12" mediumWidth="-2" smallWidth="0" uid="5xv9vyBm">
+                        <text ctrl="welcomeMessageTxt" text="LocalTxtEPUSc" uid="48cUtFMp">
+                            <rootHtmlElementProperties idLocator="welcomeMessageTxt"/>
+                        </text>
+                        <panel cssClass="d-none d-md-block" ctrl="Panwsv9X" uid="K9Tx3DRR">
+                            <image alternativeText="LocalTxt3BTtlE" ariaLabelText="LocalTxt4BzDee" cssClass="img-fluid profile-pic" ctrl="ImgyzzCX" imageURL="&amp;&amp;spotify_user_image_url" mouseOverText="LocalTxt7hBS2Q" newLine="true" uid="5SOUGm5j"/>
+                        </panel>
+                    </bootstrapcolumn>
+                </bootstraprow>
+                <bootstraprow cssClass="flex-grow-1" ctrl="BsRowyl2vj" uid="4rwKKaVC">
+                    <bootstrapcolumn cssClass="d-flex justify-content-center" ctrl="uiCol" extraSmallWidth="12" mediumWidth="5" smallWidth="0" uid="4sEWq5Ez">
+                        <rootHtmlElementProperties idLocator="uiPanel"/>
+                        <panel cssClass="w-100" ctrl="uiInnerPanel" uid="4mcbQfV9">
+                            <rootHtmlElementProperties idLocator="uiInnerPanel"/>
+                            <header cssClass="subheader" ctrl="HeadN91wP" uid="CyV1KeWp">
+<text ctrl="TexV2LgP" text="LocalTxt4UDbys" uid="K8PZO6tR"/>
+                            </header>
+                            <panel ctrl="PanqsHma" uid="LlXuL4Ce">
+<field ariaLabelText="LocalTxtAO3OqO" buttonText="LocalTxt9ubAEW" ctrl="Fld11mst9" displayLabelText="true" field="spotify_artist_search" placeHolderText="LocalTxt1NhXlg" requiredText="LocalTxt1REdrU" uid="Ds5WTfkY" validationText="LocalTxt4eXBmp"/>
+<button ariaLabelText="LocalTxt4JaMDE" buttonText="LocalTxt6GuUux" ctrl="ButzBB4e" mouseOverText="LocalTxtAP9am8" onClickEvent="/Modules/Home/Scripts/Events/spotifySearch" uid="Ed1eNYMN"/>
+                            </panel>
+                            <panel ctrl="Pan9O7hl" hidden="true" uid="QBlqvViJ">
+<text ctrl="TexMDzY1" text="LocalTxt5DLKAi" uid="3QZt0u0y"/>
+<hyperlink ariaLabelText="LocalTxt3Bur4t" ctrl="LnkLeegJ" onClickEvent="/Modules/Home/Scripts/Events/showArtistID" text="LocalTxt6nmgZ5" title="LocalTxt9oULkd" uid="4OAtqrPp"/>
+                            </panel>
+                            <field ariaLabelText="LocalTxtAEwfAT" buttonText="LocalTxt86iDT8" ctrl="artistId" field="artist_id" hidden="true" placeHolderText="LocalTxt9kxvQU" requiredText="LocalTxt4tiEKI" uid="5XspAN87" validationText="LocalTxt6K6Vw"/>
+                            <bootstraprow cssClass="my-4" ctrl="selectedArtistRow" gutter="false" horizontalAlignment="Between" uid="GiKqPGy6">
+<rootHtmlElementProperties idLocator="selectedArtistsRow"/>
+<bootstrapcolumn cssClass="text-center text-md-left" ctrl="BsColumn14IvrN" extraSmallWidth="12" mediumWidth="3" smallWidth="0" uid="8B3Nc2nr">
+    <text ctrl="TexshPmF" text="LocalTxt7tY7KU" uid="Ef3OWQ1F"/>
+</bootstrapcolumn>
+<bootstrapcolumn cssClass="h3 text-center" ctrl="selectedArtistNameCol" uid="MeXqmAn6">
+    <rootHtmlElementProperties idLocator="selectedArtistNameCol"/>
+    <text ctrl="Tex7fNcG" text="LocalTxt19W8EJ" uid="IGztMFXM"/>
+</bootstrapcolumn>
+<bootstrapcolumn cssClass="@0" ctrl="BsColumndLiwj" smallWidth="3" uid="EETx6oQR"/>
+                            </bootstraprow>
+                            <panel cssClass="my-2" ctrl="Panz99An" uid="6uTVYFl">
+<button ariaLabelText="LocalTxt9CVqjk" buttonText="LocalTxt4SrAgv" cssClass="w-100" ctrl="ButuCGNA" mouseOverText="LocalTxt7ttcBG" onClickEvent="/Modules/Home/Scripts/Events/createPlaylist" uid="DkqWF2kk"/>
+                            </panel>
+                        </panel>
+                    </bootstrapcolumn>
+                    <bootstrapcolumn cssClass="h-100" ctrl="BsColumnIUYoT" extraSmallWidth="12" layoutType="@0" mediumWidth="-2" smallWidth="0" uid="OgnJni49" verticalAlignment="Start">
+                        <rootHtmlElementProperties idLocator="searchResultCol"/>
+                        <panel cssClass="d-flex flex-column h-100" ctrl="searchResultPnl" uid="3v961ops">
+                            <rootHtmlElementProperties idLocator="searchResultsPanel"/>
+                            <header cssClass="subheader" ctrl="Headf19uN" uid="QbDk46T0">
+<text ctrl="Tex802sR" text="LocalTxt666I17" uid="2GbFbTyR"/>
+                            </header>
+                            <panel cssClass="flex-grow-1" ctrl="PanlMJto" uid="E7kg2WWV">
+<repeater cssClass="mb-2" ctrl="searchResultRepeater" field="searchResults" hidden="true" layoutType="@0" uid="DDNW9KQ9">
+    <rootHtmlElementProperties idLocator="searchResultsRepeater"/>
+    <repeaterRow ctrl="searchResultRow" uid="OXSupwCH">
+        <rootHtmlElementProperties classLocator="searchResultRow"/>
+        <bootstraprow cssClass="justify-content-around justify-content-md-end" ctrl="BsRowUcNL1" gutter="false" horizontalAlignment="@0" uid="4WLxINSg">
+            <bootstrapcolumn cssClass="d-flex align-items-center" ctrl="BsColumnG0zNO" extraSmallWidth="3" mediumWidth="0" smallWidth="0" uid="AhuEM82h">
+                <image alternativeText="LocalTxt5iYS6l" ariaLabelText="LocalTxt1vrKdC" cssClass="img-fluid search-pic" ctrl="Img1z7L" imageURL="&amp;&amp;searchResults-img_url" mouseOverText="LocalTxt5ezTyu" newLine="true" uid="CqQ7YyQK"/>
+            </bootstrapcolumn>
+            <bootstrapcolumn cssClass="d-flex align-items-center" ctrl="BsColumnLQPgk" extraSmallWidth="5" mediumWidth="0" smallWidth="0" uid="EQwkNxzD">
+                <text ctrl="TexeZTV1" text="LocalTxt4Qp0Aq" uid="K5lZKqrw"/>
+            </bootstrapcolumn>
+            <bootstrapcolumn cssClass="d-flex align-items-center offset-md-2" ctrl="BsColumnLFGWA" extraSmallWidth="-1" mediumWidth="0" smallWidth="0" uid="I46wY9n1">
+                <hyperlink ariaLabelText="LocalTxt7Ubzf1" cssClass="mx-2" ctrl="LnkOyjMg" onClickEvent="/Modules/Home/Scripts/Events/selectArtist" text="LocalTxt9CfENa" title="LocalTxt6sBQzX" uid="IFAajnOX"/>
+            </bootstrapcolumn>
+        </bootstraprow>
+    </repeaterRow>
+</repeater>
+<panel cssClass="text-muted d-flex justify-content-center align-items-stretch h-100" ctrl="noSearchResultsMsgPnl" uid="2UMRWrXc">
+    <text ctrl="TexBji0d" text="LocalTxt6fPfVL" uid="2Iplpub0"/>
+</panel>
+                            </panel>
+                        </panel>
+                    </bootstrapcolumn>
+                </bootstraprow>
+            </bootstrapcontainer>
+        </page>
+    </pageContents>
+</page>

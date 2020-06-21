@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Landing" nextPage="Dashboard" beforePageEvent="/Modules/Home/Scripts/Events/landingBP" pageHeaderTextRef="Txt5VjcQx" pageInfoTextReference="Txt7RvFbY" pageTrailerTextReference="Txt8qlc6q" nextPageTextReference="TxtAcHln3" prevPageTextReference="TxtpSuyu">
+    <pageContents>
+        <page contentClass="content-root d-flex align-items-center" cssClass="@0" ctrl="Pag11Rx17" outputType="0" pdfFooterText="LocalTxt9qUwSd" pdfHeaderText="LocalTxt8NTLh3" uid="QCuXge6J">
+            <bootstrapcontainer bootstrapContainerType="Centered" cssClass="text-center my-auto" ctrl="BsContainer11u4Yq" uid="9JppGXNE">
+                <text cssClass="display-3" ctrl="TexhVcDW" text="LocalTxt8v6ett" uid="LsYuu39x"/>
+                <panel cssClass="my-4" ctrl="Pan30yw0" uid="Eg1CNqGg">
+                    <hyperlink ariaLabelText="LocalTxt4McB0O" cssClass="btn btn-primary btn-lg w-50" ctrl="LoginBtn" onClickEvent="/Modules/Home/Scripts/Events/callSpotifyAuth" text="LocalTxt1VzMWk" title="LocalTxt1aSOo3" uid="97HdKCL2">
+                        <rootHtmlElementProperties idLocator="loginBtn"/>
+                    </hyperlink>
+                </panel>
+            </bootstrapcontainer>
+        </page>
+    </pageContents>
+</page>

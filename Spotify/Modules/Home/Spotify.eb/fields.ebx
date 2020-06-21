@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="artist_id" type="CHAR" labelTextRef="Txt9iwife" helpTextRef="Txt6HMFmI" displayType="TEXT"/>
+    <field name="artist_name" type="CHAR" defaultValue="none" labelTextRef="Txt2gtssx" displayType="TEXT"/>
+    <field name="authSuccess" type="BOOLEAN" labelTextRef="TxtAGa1Tf" displayType="TEXT"/>
+    <field name="auth_key" type="CHAR" labelTextRef="Txt1wFqXI" displayType="TEXT"/>
+    <field name="authorization" type="CHAR" labelTextRef="Txt9Rao85" displayType="TEXT"/>
+    <field name="bearer_code" type="CHAR" labelTextRef="Txt4VYkrQ" displayType="TEXT"/>
+    <field name="client_credentials" type="CHAR" labelTextRef="Txt2K6DeQ" displayType="TEXT"/>
+    <field name="client_id" type="CHAR" labelTextRef="TxtAeJSjK" displayType="TEXT"/>
+    <field name="client_secret" type="CHAR" labelTextRef="Txt3dJdp4" displayType="TEXT"/>
+    <field name="country" type="CHAR" defaultValue="GB" labelTextRef="Txt18XIww" displayType="TEXT"/>
+    <field name="playlist_id" type="CHAR" labelTextRef="Txt8yk1bU" displayType="TEXT"/>
+    <field name="redirect_uri" type="CHAR" labelTextRef="Txt3UqKyO" displayType="TEXT"/>
+    <field name="refresh_token" type="CHAR" labelTextRef="Txt9uZZ0P" displayType="TEXT"/>
+    <field name="relatedArtists" type="OBJECT" labelTextRef="Txt2reebY" displayType="TEXT"/>
+    <field name="requestBody" type="CHAR" labelTextRef="Txt2xmkQH" displayType="TEXT"/>
+    <field name="responseBody" type="CHAR" labelTextRef="Txt28iT0y" displayType="TEXT"/>
+    <field name="responseCode" type="CHAR" labelTextRef="Txt6JfxQT" displayType="TEXT"/>
+    <field name="response_type" type="CHAR" labelTextRef="Txt9zAjAL" displayType="TEXT"/>
+    <field name="scope" type="CHAR" labelTextRef="TxtQb0vW" displayType="TEXT"/>
+    <field name="search_query" type="CHAR" labelTextRef="TxtAU54VT" displayType="TEXT"/>
+    <field name="search_type" type="CHAR" defaultValue="artist" labelTextRef="Txt6BJRH5" displayType="TEXT"/>
+    <field name="spotify_artist_search" type="CHAR" labelTextRef="Txt9OF9Cs" helpTextRef="Txt1LjTkw" displayType="TEXT"/>
+    <field name="spotify_user_id" type="CHAR" labelTextRef="Txt7WQ4ie" displayType="TEXT"/>
+    <field name="spotify_user_image_url" type="CHAR" labelTextRef="Txt7YeEJO" displayType="TEXT"/>
+</fields>
