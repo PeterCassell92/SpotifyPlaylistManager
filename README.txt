@@ -1,7 +1,8 @@
-<link src=http://spotify.verj.cloud>LIVE VERSION</link>
+-- LIVE VERSION--
+http://spotify.verj.cloud 
 
 
-SPOTIFY PLAYLIST MANAGER
+--SPOTIFY PLAYLIST MANAGER--
 
 Creates Playlists related to selected artist.
 
